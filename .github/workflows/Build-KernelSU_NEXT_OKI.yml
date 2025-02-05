@@ -44,8 +44,8 @@ jobs:
        run: |
         # 强制设置用户名和邮箱
         
-        git config --global user.name "Mifengtong"
-        git config --global user.email "3335310963@qq.com"
+        git config --global user.name "qiuran"
+        git config --global user.email "1701778257@qq.com"
         git config --global credential.helper store  # 保存凭证
 
      # 合并依赖安装并添加编译加速工具
@@ -91,7 +91,7 @@ jobs:
         rm kernel_platform/common/android/abi_gki_protected_exports_* || true
         
         # 修改内核版本标识
-        sed -i 's|^echo "\$res"$|echo "-OKI-EdogawaX"|' kernel_platform/common/scripts/setlocalversion
+        sed -i 's|^echo "\$res"$|echo "-OKI-qiuran"|' kernel_platform/common/scripts/setlocalversion
 
      # 编译验证
      - name: Verify kernel build
